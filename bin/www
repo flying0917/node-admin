@@ -31,7 +31,7 @@ var server = http.createServer(app);
 
 mongoose.Promise = global.Promise;
 //连接数据库 mongodb://username:password@host:port/database
-mongoose.connect('mongodb://'+dbConfig.name+':'+dbConfig.pwd+'@'+dbConfig.ip+':'+dbConfig.port+'/'+dbConfig.dbname+'?authSource='+dbConfig.authSource, function(err) {
+mongoose.connect('mongodb://'+dbConfig.name+':'+dbConfig.pwd+'@'+dbConfig.ip+':'+dbConfig.port+'/'+dbConfig.dbname+'?authSource='+dbConfig.authSource, { useNewUrlParser: true },function(err) {
   if(err){
     console.log('数据库连接失败');
   }else{
