@@ -15,9 +15,9 @@ const config= {
         ip: "localhost",
         port: "27017",
         name: "root",
-        pwd: "abc123456",
+        pwd: "ak123456",
         authSource: "admin",
-        dbname: "shipin"
+        dbname: "admin"
     },
     //token配置
     token:{
