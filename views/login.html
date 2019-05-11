@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="../../stylesheets/login.css">
+
+</head>
+<body>
+<div class="login-content" id="app" v-cloak>
+    <div class="login-wrap">
+        <div class="left">
+            <img src="../../logo-long-theme.png" class="logo">
+            <img class="qrcode" src="../../images/qrcode.svg" style="display:none;">
+            <div class="theme">
+                <!--<div class="theme-title" style="text-align: center">
+                    <span>&lt;<b>html</b>&gt;</span>
+                </div>
+                <div class="theme-detail">Start<span> work</span></div>-->
+                <div >
+                    <div class="computer">
+                        <img src="../../images/猴子.png">
+                    </div>
+                </div>
+            </div>
+            <div class="sep"></div>
+        </div>
+        <div class="right">
+            <div class="form-content" @mouseup="mouseup($event)"  @mousemove="mousemove($event)">
+                <div class="form-login-type">
+                    <div :class='type===0?"form-login-item form-login-item-active":"form-login-item"' @click="switchType(0)">密码登陆</div>
+                    <div :class='type===1?"form-login-item form-login-item-active":"form-login-item"' @click="switchType(1)">验证码登陆</div>
+                </div>
+                <div v-if="type===0">
+                    <label>
+                        <input v-model="email" type="text" placeholder="请输入邮箱">
+                    </label>
+                    <label>
+                        <input v-model="password" type="password" placeholder="请输入密码">
+                    </label>
+
+                </div>
+                <div v-if="type===1">
+                    <label>
+                        <input v-model="email" type="text" placeholder="请输入邮箱">
+                    </label>
+                    <label class="yzm">
+                        <input v-model="yzm" class="yzm-input" type="text" placeholder="请输入验证码">
+                        <div class="yzm-tip" @click="countDown()">{{code_tip}}</div>
+                    </label>
+
+                </div>
+                <div class="validate-content">
+                    <div :class='isValidate?"validate-content-active validate-content-active-done":"validate-content-active"'
+                         :style='switchStyle'>
+                        <div class="validate-switch" @mousedown="start($event)"></div>
+
+                    </div>
+                    <div class="validate-text">向右滑动解锁</div>
+                </div>
+
+                <div class="login-btn" @click="login()">
+                    登陆
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../javascripts/vue.min.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    var vue=new Vue({
+        el:"#app",
+        data:{
+            type:0,//0为密码登陆 1为验证码登陆
+            eamil:"",
+            password:"",
+            startMove:false,
+            nowX:0,
+            nowPercent:0,
+            switchDom:null,
+            isValidate:false,
+            code_tip:"获取验证码",
+            time:60,
+            remaining:60,
+            inTime:true,//是否到点
+            switchStyle:{
+                width:this.nowPercent+"px",
+                webkitTransition:""
+            }
+        },
+        methods:{
+            //切换登陆类型
+            switchType:function(index)
+            {
+                this.type=index;
+            },
+            //开始滑动
+            start: function(e)
+            {
+                if(!this.isValidate)
+                {
+                    this.startMove=true;
+                    nowX=e.clientX;
+                    this.switchStyle.webkitTransition="";
+
+                }
+            },
+            //滑动中
+            mousemove:function(e)
+            {
+
+                if(this.startMove&&!this.isValidate)
+                {
+                    var moveX=e.clientX-nowX;
+                    this.switchStyle.width=moveX+"px";
+                    if(parseInt(this.switchStyle.width)+50>=280)
+                    {
+                        this.switchStyle.width=230+"px";
+                        this.isValidate=true;
+                    }
+                }
+            },
+            //鼠标放开
+            mouseup:function(e)
+            {
+                var that=this;
+                that.startMove=false;
+                if(!that.isValidate)
+                {
+                    that.nowX=0;
+                    that.switchStyle.webkitTransition="all .5s";
+                    setTimeout(function(){
+                        that.switchStyle.width="0px";
+                    })
+                }
+            },
+            //倒计时
+            countDown:function()
+            {
+                var that=this
+                this.inTime=false
+                var coutDownTimeStamp=setInterval(function()
+                {
+                    that.code_tip="剩余"+that.remaining+"秒"
+                    if(that.remaining===0)
+                    {
+                        clearInterval(coutDownTimeStamp)
+                        that.code_tip="获取验证码"
+                        that.remaining=that.time+1
+                        that.inTime=true
+                    }
+                    that.remaining--
+                },1000)
+            },
+            //登陆
+            login:function()
+            {
+
+            }
+        }
+    })
+</script>
+</body>
+</html>

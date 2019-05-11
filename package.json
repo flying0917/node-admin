@@ -1,0 +1,30 @@
+{
+  "name": "vue-app-service-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "depd": "^2.0.0",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "finalhandler": "^1.1.1",
+    "http-errors": "~1.6.2",
+    "inherits": "^2.0.3",
+    "jade": "~1.11.0",
+    "md5": "^2.2.1",
+    "merge-descriptors": "^1.0.1",
+    "morgan": "~1.9.0",
+    "nodemailer": "^5.1.1",
+    "setprototypeof": "^1.1.1",
+    "statuses": "^1.5.0"
+  },
+  "devDependencies": {
+    "mongoose": "^5.4.19"
+  }
+}
