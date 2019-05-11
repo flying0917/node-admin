@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>index</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./common/owl.carousel.min.css">
+    <link href="./common/fullcalendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./common/chartist.min.css">
+    <link href="./common/style.css" rel="stylesheet">
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+
+<body data-theme-version="light" data-sidebar-style="full" data-layout="horizontal" data-nav-headerbg="color_7" data-headerbg="color_7" data-sibebarbg="color_7" data-sidebar-position="fixed" data-header-position="fixed" data-container="boxed" direction="ltr">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader" style="display: none;"><div class="spinner"><div class="spinner-a"></div><div class="spinner-b"></div></div></div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper" class="show">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="">
+                    <b class="logo-abbr">A </b>
+                    <span class="brand-title">Arvid</span>
+                </a>
+            </div>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="toggle-icon"><i class="icon-menu"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="header-left">
+                    <div class="header-search icons">
+                        <span class="header-magnifier"><i class="icon-magnifier"></i> </span>
+                        <form class="drop-down">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Here">
+                                <div class="input-group-append">
+                                    <span class="input-group-text pl-3 pr-3">Search</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-right">
+
+                    <ul class="clearfix">
+                        <li class="icons">
+                            <a href="javascript:void(0)" class="">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge badge-primary">3</span>
+                            </a>
+                            <div class="drop-down animated flipInX dropdown-notfication">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-envelope"></i></span>
+                                                <div class="notification-content">
+                                                    <h5 class="notification-heading">New message received</h5>
+                                                    <span class="notification-text">One hour ago</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-user"></i></span>
+                                                <div class="notification-content">
+                                                    <h5 class="notification-heading">New account opened</h5>
+                                                    <span class="notification-text">One hour ago</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-like"></i></span>
+                                                <div class="notification-content">
+                                                    <h5 class="notification-heading">Liked our post</h5>
+                                                    <span class="notification-text">One hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-calender"></i></span>
+                                                <div class="notification-content">
+                                                    <h5 class="notification-heading">Event Started</h5>
+                                                    <span class="notification-text">One hour ago</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="d-flex justify-content-between bg-primary px-4 text-white" href="javascript:void()">
+                                        <span>All Notifications</span>
+                                        <span><i class="mdi mdi-file-document-box"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons">
+                            <div class="user-img c-pointer">
+                                <img src="./common/1.jpg" height="40" width="40" alt="avatar">
+                                <strong class="ml-2">John Doe <span><i class="fa fa-caret-down ml-2"></i></span></strong>
+
+                            </div>
+                            <div class="drop-down dropdown-profile animated flipInX">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="http://quixlab.com/demo/arvid/demo/main/template/app-profile.html">Profile</a>
+                                        </li>
+                                        <li><a href="http://quixlab.com/demo/arvid/demo/main/template/app-calender.html">Calender</a>
+                                        </li>
+                                        <li><a href="http://quixlab.com/demo/arvid/demo/main/template/email-inbox.html">Inbox <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                        </li>
+                                        <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-user-lock.html">Lock Screen</a>
+                                        </li>
+                                        <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-login.html">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="nk-nav-scroll active" style="overflow: hidden; width: auto; height: 100%;">
+                <ul class="metismenu in" id="menu">
+                    <li class="nav-label">Navigation</li>
+                    <li class="active">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="mdi mdi-speedometer"></i><span class="nav-text">Home</span>
+                        </a>
+                        <ul aria-expanded="false" class="collapse in">
+                            <li class="active"><a href="http://quixlab.com/demo/arvid/demo/main/template/index.html" class="active">Home One</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/index-2.html">Home Two</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-marketcap.html">Marketcap</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-buy-sell.html">Buy and Sell</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-wallet.html">Wallet</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-exchange.html">Exchange</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-transaction.html">Transaction</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-gateway.html">Gateway</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-trading.html">Trading</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ico-ticker.html">Ticker</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="mdi mdi-layers"></i><span class="nav-text">Options</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-blank.html">Blank</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-one-column.html">One Column</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-two-column.html">Two column</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-fixed-header.html">Fixed Header</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-fixed-sidebar.html">Fixed Sidebar</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-horizontal-nav.html">Horizontal</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-rtl.html">RTL</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-boxed.html">Boxed</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-wide-boxed.html">Wide Boxed</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-wide.html">Wide</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-dark.html">Dark</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/layout-light.html">Light</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="mdi mdi-apps"></i><span class="nav-text">Apps</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/email-inbox.html">Mailbox</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/app-profile.html">Profile</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/app-calender.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/charts.html" aria-expanded="false"><i class="mdi mdi-chart-areaspline"></i> <span class="nav-text">Graphs</span></a></li>
+                    
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/ui-bootstrap.html" aria-expanded="false"><i class="mdi mdi-bootstrap"></i><span class="nav-text">Bootstrap</span></a></li>
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/components.html" aria-expanded="false"><i class="mdi mdi-power-plug"></i><span class="nav-text">Advanced</span></a></li>
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/widget-basic.html" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="nav-text">Widget</span></a></li>
+                    
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/forms.html" aria-expanded="false"><i class="mdi mdi-file-document-box"></i><span class="nav-text">Forms</span></a></li>
+                    
+                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/tables.html" aria-expanded="false"><i class="mdi mdi-table"></i><span class="nav-text">Table</span></a></li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="nav-text">Pages</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-login.html">Login</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-register.html">Register</a></li>
+                            <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-user-lock.html">Lock Screen</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Erorr</a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-error-400.html">Erorr 400</a></li>
+                                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-error-403.html">Erorr 403</a></li>
+                                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-error-404.html">Erorr 404</a></li>
+                                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-error-500.html">Erorr 500</a></li>
+                                    <li><a href="http://quixlab.com/demo/arvid/demo/main/template/page-error-503.html">Erorr 503</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><div class="slimScrollBar" style="background: transparent; width: 5px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 53px;"></div>
+            <div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body" style="min-height: 788px;">
+
+            <!-- <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0">
+                    <div class="breadcrumb-range-picker">
+                        <span><i class="icon-calender"></i></span>
+                        <span class="ml-1">August 08, 2017 - August 08, 2017</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Components</a></li>
+                    </ol>
+                </div>
+            </div> -->
+            <!-- row -->
+
+            <div class="container">
+                <div class="row justify-content-between mb-4 mt-4">
+					<div class="col-xl-4 text-left">
+						<h2 class="page-heading">Your Currencies</h2>
+                        <p class="mb-0">The currencies you have purchased are here.</p>
+                        <div class="currencies">
+                            <span><i class="cc BTC"></i></span> 
+                            <span><i class="cc ETH"></i></span> 
+                            <span><i class="cc XRP"></i></span> 
+                            <span><i class="cc DASH"></i></span> 
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="crypto-ticker">
+                            <div class="tickercontainer" style="height: auto; overflow: hidden;">
+                                <div class="mask">
+                                    <ul id="webticker-big" style="position: relative; overflow: hidden; float: left; font: bold 10px Verdana; list-style-type: none; margin: 0px; padding: 0px; width: 3130.66px; transition-timing-function: linear; transition-duration: 5.04656s; left: -252.328px;">
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc ETH"></i> ETH <span class="coin-value"> $1.2792</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc GAME"></i> GAME <span class="coin-value">$11.039232</span>
+                                        <span class="text-danger coin-status"> - 1.81% <i class="fa fa-level-down"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc LBC"></i> LBC <span class="coin-value"> $0.588418</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc NEO"></i> NEO <span class="coin-value"> $161.511</span>
+                                        <span class="text-danger coin-status"> - 1.81% <i class="fa fa-level-down"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc STEEM"></i> STE <span class="coin-value">$0.551955</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc LTC"></i> LIT <span class="coin-value"> $177.80</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc NOTE"></i> NOTE <span class="coin-value"> $13.399</span>
+                                        <span class="text-danger coin-status"> - 1.81% <i class="fa fa-level-down"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc MINT"></i> MINT <span class="coin-value">$0.880694</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc IOTA"></i> IOT <span class="coin-value"> $2.555</span>
+                                        <span class="text-danger coin-status"> - 1.81% <i class="fa fa-level-down"></i></span>
+                                    </li>
+                                    <li class="last" style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc DASH"></i> DAS <span class="coin-value"> $769.22</span>
+                                        <span class="text-success coin-status"> - 1.81% <i class="fa fa-level-up"></i></span>
+                                    </li>
+                                    <li style="white-space: nowrap; float: left; padding: 0px 7px;">
+                                        <i class="cc BTC"></i> BTC <span class="coin-value"> $11.039232</span>
+                                        <span class="text-danger coin-status"> - 1.81% <i class="fa fa-level-down"></i></span>
+                                    </li>
+    
+                            </ul><span class="tickeroverlay-left" style="display: none;">&nbsp;</span><span class="tickeroverlay-right" style="display: none;">&nbsp;</span></div></div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="row">
+                            <div class="col-sm-6 col-xxl-6 col-xl-3">
+                                <div class="card stat-widget-one bg-btc">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto">
+                                                <h4 class="mb-3">Bitcoin</h4>
+                                                
+                                                <h3 class="mb-3"><span class="counter" id="EURvalue">1.765</span> EUR</h3>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="cc BTC-alt" title="BTC"></i>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <span class="badge text-success" id="EURcount">
+                                                <i class="mdi mdi-arrow-up-bold"></i>2.50 %  
+                                            </span>
+                                            <span> Since last month</span>
+                                        </div>
+                                        
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-6 col-xl-3">
+                                <div class="card stat-widget-one bg-eth">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto">
+                                                <h4 class="mb-3">Ethereum</h4>
+                                                
+                                                <h3 class="mb-3"><span class="counter" id="GBPvalue">1.765</span> GBP</h3>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="cc cc ETH-alt" title="ETH"></i>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <span class="badge text-danger" id="GBPcount">
+                                                <i class="mdi mdi-arrow-down-bold"></i> 2.50 % 
+                                            </span>
+                                            <span> Since last month</span>
+                                        </div>
+                                        
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-6 col-xl-3">
+                                <div class="card stat-widget-one bg-xrp">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto">
+                                                <h4 class="mb-3">Ripple</h4>
+                                                
+                                                <h3 class="mb-3"><span class="counter" id="JPYvalue">1.765</span> JPY</h3>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="cc XRP-alt" title="XRP"></i>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <span class="badge text-success" id="JPYcount">
+                                                <i class="mdi mdi-arrow-up-bold"></i> 2.50 % 
+                                            </span>
+                                            <span> Since last month</span>
+                                        </div>
+                                        
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-6 col-xl-3">
+                                <div class="card stat-widget-one bg-dash">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto">
+                                                <h4 class="mb-3">Dash</h4>
+                                                
+                                                <h3 class="mb-3"><span class="counter" id="USDvalue">1.765</span> USD</h3>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="cc DASH-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <span class="badge text-danger" id="USDcount">
+                                                <i class="mdi mdi-arrow-down-bold"></i> 2.50 % 
+                                            </span>
+                                            <span> Since last month</span>
+                                        </div>
+                                        
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Currency Strength</h4>
+                                <div class="card-action">
+                                    <a href="javascript:void(0)" data-action="reload"><span class="mdi mdi-refresh"></span></a>
+                                    <div class="dropdown">
+                                        <a class="btn" href="http://quixlab.com/demo/arvid/demo/main/template/index.html#" role="button" data-display="static" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-settings"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="http://quixlab.com/demo/arvid/demo/main/template/index.html#">Action</a>
+                                            <a class="dropdown-item" href="http://quixlab.com/demo/arvid/demo/main/template/index.html#">Another action</a>
+                                            <a class="dropdown-item" href="http://quixlab.com/demo/arvid/demo/main/template/index.html#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                    <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                        <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                    </div>
+                                    <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                        <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                    </div>
+                                </div>
+                                <canvas id="earnings_bar_chart" width="1060" height="264" class="chartjs-render-monitor" style="display: block; width: 1060px; height: 264px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6 col-xxl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Recommendation</h4>
+                                <div class="live-price">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center"><strong>STRONG BUY</strong>  
+                                            <span class=""> <i class="fa fa-caret-up mr-2"></i> USD </span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center"><strong>STRONG BUY</strong> 
+                                            <span class=""> <i class="fa fa-caret-down mr-2"></i> CAD</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center"><strong>BUY</strong> 
+                                            <span class=""> <i class="fa fa-caret-up mr-2"></i> EUR</span> 
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center"><strong>SELL</strong> 
+                                            <span class=""> <i class="fa fa-caret-down mr-2"></i> CAD</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">CROSS PAIR Recommendation</h4>
+                                <div id="market-cap" class="table-responsive">
+                                    <table class="table mb-0 table-responsive-tiny">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">BUY/SELL?</th>
+                                                <th scope="col">CURRENCY</th>
+                                                <th scope="col">PRICE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>BUY</strong></td>
+                                                <td>EURUSD</td>
+                                                <td class="change">
+                                                    <i class="fa fa-angle-up"></i>
+                                                    <span>1.0211</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>BUY</strong></td>
+                                                <td>GBPUSD</td>
+                                                <td class="change">
+                                                    <i class="fa fa-angle-up"></i>
+                                                    <span>1.3211</span>                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>LTC</strong></td>
+                                                <td>$12,623.40</td>
+                                                <td class="change">
+                                                    <i class="fa fa-angle-up"></i>
+                                                    <span>+6.50%</span>
+                                                </td>
+                                            </tr>
+                                        
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-xxl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Cash Flow </h4>
+                                <div class="buy-token mt-4">
+                                    <div class="basic-form">
+                                        <div>Commodity wil go up and stock market will ...</div>
+                                        <div class="">
+                                            <img src="">
+                                            <img src="">
+                                            <img src="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <a class="sidebar-right-trigger gradient-5-x" href="javascript:void(0)">
+                <span><i class="fa fa-cog fa-spin"></i></span>
+            </a>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="sidebar-right-inner" style="overflow: hidden; width: auto; height: 100%;">
+                <div class="admin-settings">
+                    <h4>Pick your style</h4>
+                    <div>
+                        <p>Background</p>
+                        <select class="form-control" name="theme_version" id="theme_version">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Layout</p>
+                        <select class="form-control" name="theme_layout" id="theme_layout">
+                            <option value="vertical">Vertical</option>
+                            <option value="horizontal">Horizontal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Sidebar</p>
+                        <select class="form-control" name="sidebar_style" id="sidebar_style">
+                            <option value="full">Full</option>
+                            <option value="mini">Mini</option>
+                            <option value="compact">Compact</option>
+                            <option value="overlay">Overlay</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Sidebar position</p>
+                        <select class="form-control" name="sidebar_position" id="sidebar_position">
+                            <option value="static">Static</option>
+                            <option value="fixed">Fixed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Header position</p>
+                        <select class="form-control" name="header_position" id="header_position">
+                            <option value="static">Static</option>
+                            <option value="fixed">Fixed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Container</p>
+                        <select class="form-control" name="container_layout" id="container_layout">
+                            <option value="wide">Wide</option>
+                            <option value="boxed">Boxed</option>
+                            <option value="wide-boxed">Wide Boxed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Direction</p>
+                        <select class="form-control" name="theme_direction" id="theme_direction">
+                            <option value="ltr">LTR</option>
+                            <option value="rtl">RTL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Navigation Header</p>
+                        <div>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_1" class="filled-in chk-col-primary" id="nav_header_bg_1">
+                                <label for="nav_header_bg_1"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_2" class="filled-in chk-col-primary" id="nav_header_bg_2">
+                                <label for="nav_header_bg_2"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_3" class="filled-in chk-col-primary" id="nav_header_bg_3">
+                                <label for="nav_header_bg_3"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_4" class="filled-in chk-col-primary" id="nav_header_bg_4">
+                                <label for="nav_header_bg_4"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_5" class="filled-in chk-col-primary" id="nav_header_bg_5">
+                                <label for="nav_header_bg_5"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_6" class="filled-in chk-col-primary" id="nav_header_bg_6">
+                                <label for="nav_header_bg_6"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_7" class="filled-in chk-col-primary" id="nav_header_bg_7">
+                                <label for="nav_header_bg_7"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_8" class="filled-in chk-col-primary" id="nav_header_bg_8">
+                                <label for="nav_header_bg_8"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_9" class="filled-in chk-col-primary" id="nav_header_bg_9">
+                                <label for="nav_header_bg_9"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="navigation_header" value="color_10" class="filled-in chk-col-primary" id="nav_header_bg_10">
+                                <label for="nav_header_bg_10"></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Header</p>
+                        <div>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_1" class="filled-in chk-col-primary" id="header_bg_1">
+                                <label for="header_bg_1"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_2" class="filled-in chk-col-primary" id="header_bg_2">
+                                <label for="header_bg_2"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_3" class="filled-in chk-col-primary" id="header_bg_3">
+                                <label for="header_bg_3"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_4" class="filled-in chk-col-primary" id="header_bg_4">
+                                <label for="header_bg_4"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_5" class="filled-in chk-col-primary" id="header_bg_5">
+                                <label for="header_bg_5"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_6" class="filled-in chk-col-primary" id="header_bg_6">
+                                <label for="header_bg_6"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_7" class="filled-in chk-col-primary" id="header_bg_7">
+                                <label for="header_bg_7"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_8" class="filled-in chk-col-primary" id="header_bg_8">
+                                <label for="header_bg_8"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_9" class="filled-in chk-col-primary" id="header_bg_9">
+                                <label for="header_bg_9"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="header_bg" value="color_10" class="filled-in chk-col-primary" id="header_bg_10">
+                                <label for="header_bg_10"></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Sidebar</p>
+                        <div>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_1" class="filled-in chk-col-primary" id="sidebar_bg_1">
+                                <label for="sidebar_bg_1"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_2" class="filled-in chk-col-primary" id="sidebar_bg_2">
+                                <label for="sidebar_bg_2"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_3" class="filled-in chk-col-primary" id="sidebar_bg_3">
+                                <label for="sidebar_bg_3"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_4" class="filled-in chk-col-primary" id="sidebar_bg_4">
+                                <label for="sidebar_bg_4"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_5" class="filled-in chk-col-primary" id="sidebar_bg_5">
+                                <label for="sidebar_bg_5"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_6" class="filled-in chk-col-primary" id="sidebar_bg_6">
+                                <label for="sidebar_bg_6"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_7" class="filled-in chk-col-primary" id="sidebar_bg_7">
+                                <label for="sidebar_bg_7"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_8" class="filled-in chk-col-primary" id="sidebar_bg_8">
+                                <label for="sidebar_bg_8"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_9" class="filled-in chk-col-primary" id="sidebar_bg_9">
+                                <label for="sidebar_bg_9"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_10" class="filled-in chk-col-primary" id="sidebar_bg_10">
+                                <label for="sidebar_bg_10"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_11" class="filled-in chk-col-primary" id="sidebar_bg_11">
+                                <label for="sidebar_bg_11"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_12" class="filled-in chk-col-primary" id="sidebar_bg_12">
+                                <label for="sidebar_bg_12"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_13" class="filled-in chk-col-primary" id="sidebar_bg_13">
+                                <label for="sidebar_bg_13"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_14" class="filled-in chk-col-primary" id="sidebar_bg_14">
+                                <label for="sidebar_bg_14"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="sidebar_bg" value="color_15" class="filled-in chk-col-primary" id="sidebar_bg_15">
+                                <label for="sidebar_bg_15"></label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slimScrollBar" style="background: rgb(198, 200, 201); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+            <div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+        </div>
+        <!--**********************************
+            Right sidebar end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="./common/common.min.js"></script>
+    <script src="./common/custom.min.js"></script>
+    <script src="./common/settings.js"></script>
+    <script src="./common/quixnav.js"></script>
+    <script src="./common/styleSwitcher.js"></script>
+    
+    
+    <!-- ChartJS -->
+    <script src="./common/Chart.bundle.min.js"></script>
+    <!-- Ticker -->
+    <script src="./common/jquery.webticker.min.js"></script>
+
+    <!--  flot-chart js -->
+    <script src="./common/jquery.flot.js"></script>
+    <script src="./common/jquery.flot.resize.js"></script>
+
+    <!-- Counter Up -->
+    <script src="./common/jquery.waypoints.min.js"></script>
+    <script src="./common/jquery.counterup.min.js"></script>
+
+
+
+    <script src="./common/dashboard-1.js"></script>
+
+
+
+</body></html>

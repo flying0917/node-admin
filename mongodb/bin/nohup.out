@@ -1536,3 +1536,22 @@ nohup: ./mongodb: No such file or directory
 2019-05-11T19:28:05.794+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:59162 #6 (6 connections now open)
 2019-05-11T19:28:15.462+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:59212 #7 (7 connections now open)
 2019-05-11T19:28:15.468+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:59213 #8 (8 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn6] end connection 127.0.0.1:59162 (7 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn5] end connection 127.0.0.1:59161 (6 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn8] end connection 127.0.0.1:59213 (4 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn4] end connection 127.0.0.1:59160 (3 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn7] end connection 127.0.0.1:59212 (5 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn3] end connection 127.0.0.1:59159 (2 connections now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn2] end connection 127.0.0.1:59158 (1 connection now open)
+2019-05-11T22:19:00.371+0800 I NETWORK  [conn1] end connection 127.0.0.1:59157 (0 connections now open)
+2019-05-11T22:19:06.022+0800 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2019-05-11T22:19:06.022+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2019-05-11T22:19:06.022+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2019-05-11T22:19:06.022+0800 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2019-05-11T22:19:06.023+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2019-05-11T22:19:06.024+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2019-05-11T22:19:06.024+0800 I STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2019-05-11T22:19:06.024+0800 I STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2019-05-11T22:19:06.164+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2019-05-11T22:19:06.166+0800 I CONTROL  [signalProcessingThread] now exiting
+2019-05-11T22:19:06.166+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
