@@ -34,7 +34,7 @@ const config= {
         "/users/login":true,
         "/admin/login":true,
         "/stylesheets/login.css":true,
-        "/stylesheets/style.css":true,
+        "/stylesheets/style.css":true
     }
 }
 
