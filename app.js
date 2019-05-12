@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 
-app.use(express.static('public'));
+app.use('/static',express.static("./public"))
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -96,6 +96,7 @@ app.all('*', function(req, res, next) {
       }
       else
       {
+        res.location('/admin/login');
         res.render('login', { title: '登陆页面' ,path:__dirname+"publish"});
         return ;
       }
