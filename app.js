@@ -97,7 +97,7 @@ app.all('*', function(req, res, next) {
       else
       {
         res.location('/admin/login');
-        res.render('login', { title: '登陆页面' ,path:__dirname+"publish"});
+        //res.render('login', { title: '登陆页面' ,path:__dirname+"publish"});
         return ;
       }
     }
