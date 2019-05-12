@@ -68,7 +68,7 @@ app.all('*', function(req, res, next) {
     res.sendStatus(200);
   } else {
     //跳过登陆
-    if(allowConfig[req.path])
+    if(!allowConfig[req.path])
     {
       next();
     }

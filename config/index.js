@@ -27,14 +27,9 @@ const config= {
     sale:{
         salt:"flying0917"//密码加盐
     },
-    //跳过登陆
+    //要登陆
     allow:{
-        "/users/getEmailCode":true,
-        "/users/register":true,
-        "/users/login":true,
-        "/admin/login":true,
-        "/stylesheets/login.css":true,
-        "/stylesheets/style.css":true
+
     }
 }
 
